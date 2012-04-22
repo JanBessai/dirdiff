@@ -1,0 +1,18 @@
+dirdiff
+
+* Description
+  - dirdiff is a simple commandline tool to see the differnt files of
+    directories. 
+  - Files are different if they have a different name.
+
+* Usage
+  - Just run dirdiff <directory1> <directory2> and that is all.
+
+
+* Future
+  - Currently hidden files are simply omitted, that will change in the
+    future.
+  - Better difference criteria will also be added.
+  - More options (like support for cyclic linking) are to come.
+
+
