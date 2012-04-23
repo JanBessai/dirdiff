@@ -47,8 +47,9 @@ Cabal-version:       >=1.2
 
 
 Executable dirdiff
+  Hs-Source-Dirs:     src
   -- .hs or .lhs file containing the Main module.
-  Main-is:             dirdiff.hs
+  Main-is:            dirdiff.hs
 
   -- Packages needed in order to build this package.
   Build-depends:      base >= 4.0 && <= 5.0,
@@ -56,8 +57,13 @@ Executable dirdiff
                       filepath  >= 1.1 && <= 1.4,
                       containers >= 0.4 && <= 0.5
   -- Modules not exported by this package.
-  -- Other-modules:
+  -- Other-modules: 
 
   -- Extra tools (e.g. alex, hsc2hs, ...) needed to build the source.
   -- Build-tools:
 
+Library
+  Exposed-modules: Data.Tree.Diff
+  Hs-Source-Dirs:     src
+  Build-depends:      base >= 4.0 && <= 5.0,
+                      containers >= 0.4 && <= 0.5
